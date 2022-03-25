@@ -2,9 +2,16 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
   padding: 0;
+  background-color: antiquewhite;
+  background-image:url('pic1.jpg') ;
+  background-size:cover;
+  
+  
+  
 }
 
 .toolbox-cont {
@@ -12,6 +19,7 @@ body {
   background-color: #4b4b4b;
   display: flex;
   align-items: center;
+  opacity: 0.9;
 }
 
 .toolbox-cont > * {
@@ -60,7 +68,7 @@ body {
 }
 
 .lightblue {
-  background-color: lightblue;
+  background-color: rgb(79, 187, 223);
 }
 
 .black {
@@ -80,6 +88,7 @@ body {
 }
 
 .modal-cont {
+  
   height: 50vh;
   width: 45vw;
   background: lightblue;
@@ -130,9 +139,12 @@ body {
 }
 
 .main-cont{
+   padding: 2rem;
    display: flex;
    gap:2rem;
    justify-content: center;
+   flex-wrap: wrap;
+   
    
   
 }
@@ -144,12 +156,11 @@ body {
   background-color: rgb(177, 219, 177);
   border-radius: 25px;
   
+  
 }
-
 
 .ticket-color{
   height: 1rem;
-  background-color: black;
   
 }
 
@@ -165,6 +176,18 @@ body {
   height: calc(100%  - 1rem - 2rem);
   font-size: 1.5rem;
   padding:5px
+}
+
+
+
+	@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.floatclass{
+  animation: float 2s ease-in-out 2;
 }
 
 
