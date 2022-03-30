@@ -3,6 +3,7 @@
 }
 
 
+
 body {
   margin: 0;
   padding: 0;
@@ -122,11 +123,6 @@ body {
 
 
 }
-.priority-colors-cont>*:hover{
-  height: 3.5rem ;
-  width: 6rem;
-  
-}
 
 .priority-color{
        height: 3rem;
@@ -167,7 +163,7 @@ body {
 
 .ticket-id{
   height:2rem ;
-  background-color: red;
+  background-color: rgb(184, 151, 214);
   
 }
 
@@ -175,7 +171,11 @@ body {
 .task-area{
   height: calc(100%  - 1rem - 2rem);
   font-size: 1.5rem;
-  padding:5px
+  padding:5px;
+  outline: none;
+  /* word-wrap: break-word;
+  overflow-wrap: break-word; */
+  
 }
 
 
@@ -189,6 +189,32 @@ body {
 .floatclass{
   animation: float 2s ease-in-out 2;
 }
+
+.ticket-lock{
+
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: inherit;
+    font-size: 1.5rem;
+    
+    
+}
+#add{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3rem;
+}
+#hov:hover{
+  height: 3.5rem ;
+  width: 6rem; 
+  
+}
+#add:hover{
+  color: red;
+}
+
+
 
 
 
